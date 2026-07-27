@@ -1,4 +1,4 @@
-.styled-text {
+body {
     color: rgb(129, 117, 51);
     font-family: sans-serif;
 } 
@@ -29,4 +29,12 @@
 
 .marg-lef {
     margin-left: 150px;
+}
+
+.bottom {
+    padding-bottom: 50px;
+}
+
+img {
+    padding-top: 15px;
 }
