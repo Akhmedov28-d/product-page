@@ -74,6 +74,10 @@ body {
 h1 {
     text-align: center;
     font-size: 70px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 78px;
 }
 
 .product-price2 {
@@ -87,4 +91,24 @@ h1 {
     height: 78px;
     margin-left: 217px;
     margin-top: 220px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+.custom-style {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #A5A3B9;
+}
+
+.custom-css {
+    font-weight: 400; 
 }
