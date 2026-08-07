@@ -8,27 +8,22 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-image: url("./img/bg 1.png");
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 790px 697px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
 }
+    @font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+ }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
+ @font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+ }
 
 .product-compound__title {
     margin: 0;
@@ -45,6 +40,10 @@ body {
     margin-top: 400px;
     height: 1715px;
     padding: 1px;
+    background-image: url("./img/bg 1.png");
+    background-repeat: no-repeat;
+    background-size: 790px 697px;
+    background-position: 85px -1px;
 }
 
 .cards-catalog__list {
@@ -145,3 +144,8 @@ body {
     text-align: center;
     color: #515076;
 }
+  background-image: url("./img/bg 1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 790px 697px;
+}/*
