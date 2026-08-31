@@ -53,22 +53,3 @@ myText.textContent = 'цвет текста красный';
 isRed = true;
 }
 })
-
-
-var y = 20;
-
-function tipe() {
- var x = 10;
- 
-}
-console.log(x);
-
-tipe();
-
-let brand = "acer";
-let model = "Aspire 5";
-let ram = "16г";
-
-let info = `Ноутбук ${brand} ${model} имеет ${ram} оперативной памяти`;
-
-console.log(info);
