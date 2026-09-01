@@ -39,7 +39,3 @@ calculateArea(5, 5);
 const priceList = 'confectionery products'; 
 let foodStamps = "Cosmetics";
 var warehouse = "15-inch wheels";
-
-
-
- 
