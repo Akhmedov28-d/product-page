@@ -1,17 +1,17 @@
 function chowWeather(citi, temp) {
-  console.log(`Сейчас в ${citi} температура  ${temp} градусах по Цельсию`);
-}
+  console.log(`Сейчас в ${citi} температура  ${temp} градусах по Цельсию`)
+};
 chowWeather("Токмок", 25);
 chowWeather("Бишкек", 20);
 
 const speedOfLight = 299792458;
 function checkSpeed(speed) {
   if (speed > speedOfLight) {
-    console.log("Сверхветовая Скорость");
+    return "Сверхсветовая Скорость";
   } else if (speed < speedOfLight) {
-    console.log("Субсветовая скорость");
+    return "Субсветовая скорость";
   } else {
-    console.log("Скорость света");
+    return "Скорость света";
   }
 }
 checkSpeed(1000);
@@ -24,17 +24,17 @@ function buyProduct(budget) {
   if (budget >= price) {
     console.log("Товар Куплен");
   } else {
-    console.log(`Вам не хвотает ${price - budget}$ пополните баланс`);
+    return `Вам не хвотает ${price - budget}$ пополните баланс`;
   }
 }
+  console.log(buyProduct(50));
 
-buyProduct(50);
 
 function calculateArea(length, width) {
-  console.log(`Площадь составляет ${length * width} м²`);
+  return `Площадь составляет ${length * width} м²`;
 }
 
-calculateArea(5, 5);
+console.log(calculateArea(5, 5));
 
 const priceList = "confectionery products";
 let foodStamps = "Cosmetics";
