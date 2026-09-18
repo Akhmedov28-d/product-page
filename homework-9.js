@@ -61,19 +61,10 @@ console.log(commentData);
 
 const dotComEmails = commentData.filter((com) => com.email.endsWith(".com"));
 
-const updatedComments = commentData.map((comment) => {
-  let newPostId;
-  if (comment.id <= 5) {
-    newPostId = 2;
-  } else {
-    newPostId = 1;
-  }
-
-  return {
-    ...comment,
-    postId: newPostId,
-  };
-});
+const updatedComments = commentData.map((comment) => ({
+  ...comment,
+  postId: comment.id <= 5 ? 2 : 1,
+}));
 
 const arraySorting = commentData.map((comm) => {
   return {
@@ -82,19 +73,10 @@ const arraySorting = commentData.map((comm) => {
   };
 });
 
-const characterCount = commentData.map((symbols) => {
-  let comparison;
-  if (symbols.body.length > 180) {
-    comparison = true;
-  } else {
-    comparison = false;
-  }
-
-  return {
-    ...symbols,
-    isInvalid: comparison,
-  };
-});
+const characterCount = commentData.map((symbols) => ({
+  ...symbols,
+  isInvalid: symbols.body.length > 180,
+}));
 
 const emailUser = commentData.reduce((emailt, item) => {
   emailt.push(item.email);
