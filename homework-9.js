@@ -1,7 +1,7 @@
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let numberFilter = numbers.filter((numb) => numb >= 5);
 
-let IslamicBooks = [
+const IslamicBooks = [
   {
     name: "Этикет ищущего знание",
     author: "Шейх Мухаммад Ибн Солих Аль-Усеймин",
@@ -39,15 +39,7 @@ let IslamicBooks = [
   },
 ];
 
-let categoryFilter = IslamicBooks.filter((categ) => {
-  if (categ.category === "religious belief") {
-    console.log("Корректные входные пораметры");
-    return true;
-  } else {
-    console.log("Некорректные входные параметры");
-    return false;
-  }
-});
+const groceryList = ["Бананы", "Яблоки", "Абрикосы", "Виноград", "Арбуз"];
 
 const twoArrays = [...numbers, ...IslamicBooks];
 function reverseArrays(arr) {
@@ -90,3 +82,26 @@ console.log(renameArray);
 
 const emailsString = userEmails.join(", ");
 console.log(emailsString);
+
+function apple(products) {
+  if (typeof products !== "string") {
+    return "Некорректные входные параметры";
+  }
+  return groceryList.includes(products);
+}
+
+console.log(apple(555));
+
+function categorySorting(Sorting) {
+  if (!Array.isArray(Sorting)) {
+    return "Некорректные входные параметры";
+  }
+  return Sorting.filter((categ) => {
+    if (categ.category === "religious belief") {
+      return true;
+    } else {
+      return false;
+    }
+  });
+}
+console.log(categorySorting(IslamicBooks));
