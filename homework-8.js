@@ -34,10 +34,10 @@ addMaxSpeed(techPassport);
 console.log(techPassport);
 
 function characteristic(vipClass, beautifulColor) {
-  return vipClass[beautifulColor]
+  return vipClass[beautifulColor];
 }
 
-(characteristic(techPassport, "color"))
+characteristic(techPassport, "color");
 
 const healthyFoods = [
   "Жирная рыба",
