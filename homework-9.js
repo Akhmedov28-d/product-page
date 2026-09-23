@@ -1,7 +1,7 @@
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let numberFilter = numbers.filter((numb) => numb >= 5);
 
-const IslamicBooks = [
+const islamicBooks = [
   {
     name: "Этикет ищущего знание",
     author: "Шейх Мухаммад Ибн Солих Аль-Усеймин",
@@ -14,7 +14,7 @@ const IslamicBooks = [
   {
     name: "Малое Завешание",
     author: "Ибн Таймийя",
-    year: 2020,
+    year: 1993,
     color: "green",
     genre: "religion",
     category: "instruction",
@@ -23,7 +23,7 @@ const IslamicBooks = [
   {
     name: "40 хадисов",
     author: "Шейх Солих Фaузан",
-    year: 2021,
+    year: 2000,
     color: "black",
     genre: "religion",
     category: "hadiths",
@@ -32,16 +32,25 @@ const IslamicBooks = [
   {
     name: "Разьяснение трех основ",
     author: "Мухаммад Ат-Тамими",
-    year: 2020,
+    year: 1995,
     color: "green",
     genre: "religion",
     category: "religious belief",
   },
 ];
+function searchBook(books, bookName) {
+  return books.filter((book) => book.name === bookName);
+}
+
+function findBlackBook(books, bookColor) {
+  return books.filter((book) => book.color === bookColor);
+}
+
+const BlackBook = findBlackBook(islamicBooks, "black");
 
 const groceryList = ["Бананы", "Яблоки", "Абрикосы", "Виноград", "Арбуз"];
 
-const twoArrays = [...numbers, ...IslamicBooks];
+const twoArrays = [...numbers, ...islamicBooks];
 function reverseArrays(arr) {
   return [...arr].reverse();
 }
@@ -104,4 +113,11 @@ function categorySorting(Sorting) {
     }
   });
 }
-console.log(categorySorting(IslamicBooks));
+
+function filterBooksUntil2022(books) {
+  return books.filter((book) => book.year < 2022);
+}
+
+const BooksUntil2022 = filterBooksUntil2022(islamicBooks);
+
+console.log(BooksUntil2022);
